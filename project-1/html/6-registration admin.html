@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/6-registration admin.css" />
+    <script
+            src="https://kit.fontawesome.com/74cff9a6e2.js"
+            crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Fine Management System</h1>
+      <ul>
+        <li><a href="2-login police.html">Log In</a></li>
+        <li><a href="#">SIGN UP</a></li>
+      </ul>
+    </nav>
+    <div class="form-outline">
+      <h1>Create Administrator Account</h1>
+      <div class="all">
+        <div class="form-image">
+          <img src="Network-Administrator-Jobs.jpg" alt="" />
+        </div>
+        <div class="outside-form">
+          <form action="9-confirm%20admin.html">
+            <div class="inside-form">
+              <label>Full Name</label><br />
+              <input
+                type="text"
+                placeholder="Eg:- Mohamed Azeem"
+                required
+              /><br /><br />
+              <label>Admin ID</label><br />
+              <input
+                type="text"
+                placeholder="Eg:- AB123456"
+                required
+              /><br /><br />
+              <label>Number</label><br />
+              <input
+                type="text"
+                placeholder="Eg:- 077-1234567"
+                required
+              /><br /><br />
+              <label>Email</label><br />
+              <input
+                type="email"
+                placeholder="Eg:- azeemhaleem451@gmail.com"
+                required
+              /><br /><br />
+              <input type="submit" value="Next step" />
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+
+      <div class="contact">
+        <h1 class="sub-title">About Us</h1>
+        <p><i class="fas fa-paper-plane"></i> Fintech@hotmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> +94772622543</p>
+        <div class="social-icons">
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></i></a>
+          <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://instagram.com"
+          ><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <p style="margin-top:10px;margin-bottom: 10px">Powered by Fintech</p>
+      <p class="tit">&copy; 2024-Fine Management System</p>
+    </footer>
+    <script>
+      function validation(){
+        var fullname = document.getElementById("fullname").value;
+        if(fullname.length<3){
+          alert("Full name must be at lease 3 characteristics long.");
+          return false;
+        }
+        var officerid = document.getElementById("officerid");
+        if(officerid.length<7){
+          alert("Officer Id contains at lease 6 characteristics");
+          return false;
+        }
+        var batchno = document.getElementById("batchno").value;
+        if(isNaN(batchno)){
+          alert("Batch Number must be a Number");
+        }
+        var phonenumber = document.getElementById("phonenumber").value;
+        var numberpattern = /^\d{3}-d{7}$/;
+        if(!numberpattern.test(phonenumber)){
+          alert("Phone number must be 077-1234567 format");
+          return false;
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>

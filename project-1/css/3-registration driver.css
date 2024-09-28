@@ -1,0 +1,151 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.form-outline{
+    width:60%;
+    height: auto;
+    padding:20px;
+    margin-top: 10%;
+    margin-left:20%;
+    margin-bottom: 10%;
+    background-color:white;
+    border: 2px solid black;
+    border-radius:10px;
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    gap:20px;
+}
+.all{
+    display: inline-block;
+    margin-top: 0;
+    border-top:2px solid black;
+    position: relative;
+}
+.form-outline h1{
+    text-align: center;
+}
+body{
+    background-color: lightblue;
+}
+
+.form-image{
+    width: 40%;
+    margin-top:30px;
+    display: inline-block;
+}
+
+.form-image img{
+    width: 100%;
+    margin-top:20%;
+}
+.outside-form{
+    width: 40%;
+    padding:10px;
+    float:right;
+    border-radius: 10px;
+}
+
+.inside-form label{
+    text-align: left;
+}
+.inside-form input[type="text"] {
+    width: 210px;
+}
+.inside-form input[type="email"] {
+    width: 210px;
+}
+.inside-form input[type="submit"] {
+    width: 210px;
+    height: 30px;
+    border-radius: 30px;
+    margin-left: 15px;
+    background-color: rgb(61, 145, 197);
+    color: white;
+    border:none;
+}
+.inside-form input[type="submit"]:hover {
+    background-color: blue;
+    color:white;
+}
+.inside-form input[type="radio"] {
+    margin-left: 10px;
+}
+.navbar{
+    background-color: #000032;
+    padding-top:25px;
+    padding-bottom: 25px;
+
+}
+.navbar h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.navbar ul{
+    text-align: right;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    margin-right: 20px;
+    padding: 5px;
+}
+.navbar ul li a:hover{
+    background-color: #6d6dff;
+    color:white;
+    border-radius: 3px;
+}
+footer{
+    background-color: gray;
+    color:white;
+    padding-bottom: 20px;
+    text-align: center;
+}
+footer p{
+    font-size: 20px;
+
+}
+footer .contact{
+    padding-top:20px;
+    text-align: left;
+    padding-left: 30px;
+
+}
+footer .contact .sub-title{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+footer .contact p{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+footer .contact .social-icons{
+    font-size: 20px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+footer .contact .social-icons a{
+    margin-right: 15px;
+}
+@media screen and (max-width: 700px) {
+    .navbar h1{
+        margin-bottom: 10px;
+    }
+    .form-image{
+        display: block;
+    }
+    .outside-form{
+        float:none;
+    }
+    .form-image img{
+        width: 170%;
+        margin-left: 20%;
+    }
+    .inside-form {
+        margin-left: 10%;
+    }
+
+}

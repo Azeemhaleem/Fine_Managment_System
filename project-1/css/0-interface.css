@@ -1,0 +1,93 @@
+*{
+    padding:0;
+    margin:0;
+}
+.interface{
+    width:75%;
+    border:2px solid black;
+    margin-top: 10%;
+    margin-left: 10%;
+    background-color: aqua;
+    padding:10px;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    
+}
+.interface h1{
+    text-align: center;
+    padding: 20px;
+}
+.interface a{
+    display: inline-block;
+    width:30%;
+    text-align: center;
+    background-color: bisque;
+    padding:10px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.interface a:hover{
+    background-color: rgb(219, 196, 168);
+}
+.interface a .admin img{
+    height:130px;
+}
+
+.interface a .police img{
+    height:130px;
+}
+.interface a .driver img{
+    height:130px;
+}
+.navbar{
+    background-color: #000032;
+    color:white;
+    padding-top:30px;
+    padding-bottom: 30px;
+
+}
+.navbar h1{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+footer{
+    background-color: #000032;
+    color:white;
+    padding-bottom: 20px;
+    text-align: center;
+}
+footer p{
+    font-size: 20px;
+
+}
+footer .contact{
+    padding-top:20px;
+    text-align: left;
+    padding-left: 30px;
+
+}
+footer .contact .sub-title{
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+footer .contact p{
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+footer .contact .social-icons{
+    font-size: 20px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+footer .contact .social-icons a{
+    margin-right: 15px;
+    color: wheat;
+}
+@media screen and (max-width: 700px) {
+    .interface a{
+        display: block;
+        width:80%;
+        margin-left: 20px;
+    }
+}

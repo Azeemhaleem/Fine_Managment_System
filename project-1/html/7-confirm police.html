@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/7-confirm%20police.css" />
+    <script
+            src="https://kit.fontawesome.com/74cff9a6e2.js"
+            crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1>Fine Management System</h1>
+      <ul>
+        <li><a href="2-login police.html">Log In</a></li>
+        <li><a href="1-registration police.html">SIGN UP</a></li>
+      </ul>
+    </nav>
+    <div class="form-outline">
+      <h1>Create Account</h1>
+      <div class="all">
+        <div class="outside-form">
+          <form action ="2-login%20police.html" onsubmit="validation()">
+            <div class="inside-form">
+              <div class="tags">
+                <label>Username</label><br />
+                <input
+                  type="text"
+                  placeholder="Eg:- MD123456"
+                  required
+                /><br /><br />
+                <label class="label">Create Password</label><br />
+                <input type="password" placeholder="********" required id="password1"/>
+                <br /><br />
+                <label class="label">Confirm Password</label><br />
+                <input type="password" placeholder="********" required id="password2"/>
+                <br /><br />
+              </div>
+
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+
+      <div class="contact">
+        <h1 class="sub-title">About Us</h1>
+        <p><i class="fas fa-paper-plane"></i> Fintech@hotmail.com</p>
+        <p><i class="fas fa-phone-square-alt"></i> +94772622543</p>
+        <div class="social-icons">
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook"></i></i></a>
+          <a href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://instagram.com"
+          ><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <p style="margin-top:10px;margin-bottom: 10px">Powered by Fintech</p>
+      <p class="tit">&copy; 2024-Fine Management System</p>
+    </footer>
+    <script>
+      function validation(){
+        var createpass = document.getElementById("password1").value;
+        var confirmpass = document.getElementById("password2").value;
+        var passtype = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+
+        if(!passtype.test(createpass)){
+          alert("Password must be at least 8 characters long, contain at least one letter, one number, and one special character.");
+          false;
+        }
+        if(createpass!==confirmpass){
+          alert("Password do not match");
+          false;
+        }
+        return true;
+      }
+
+    </script>
+  </body>
+</html>
